@@ -1,0 +1,152 @@
+@charset 'utf-8';
+body{
+  background-color: rgb(238,238,238);
+}
+ul{
+	list-style: none;
+}
+.fix{
+	clear: both;
+	content: "";
+	display: block;
+}
+.box-search {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.4rem;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+}
+.search-form {
+    margin-top: .3rem;
+    margin-left: .2rem;
+    width: 9.6rem;
+    height: .8rem;
+}
+.search-input {
+    position: absolute;
+    width: 9.6rem;
+    height: .8rem;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 8px;
+    border: 0;
+}
+.search-tip {
+    position: absolute;
+    text-align: center;
+    left: 2rem;
+    width: 6.2rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .45rem;
+    color: #999;
+    z-index: 999;
+    background: url(../image/search.png) no-repeat;
+    background-size: .4rem .4rem;
+    background-position: 0rem .2rem;
+}
+#J_Srcoll{
+	position: absolute;
+    top: 1.4rem;
+    bottom: 0;
+    width: 2rem;
+    left: 0rem;
+    overflow: scroll;
+    border-right: 1px solid #ccc 
+}
+#xs_container{
+	/*height: 579px;*/
+	transform: translate(0px, 0px) translateZ(0px);
+}
+#J_Srcoll ul{
+	width: 2rem;
+}
+#xs_container ul li{
+	font-size: .4rem;
+	width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color:  rgb(255, 85, 0);
+}
+.contan{
+	position: fixed;
+    top: 1.4rem;
+    width: 8rem;
+    height:100%;
+    left: 2rem;
+    overflow-y: scroll;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+
+}
+#a1{
+	height: 100%;
+}
+.banner{
+	padding-top: .15rem;
+    padding-left: .2rem;
+    background-color: #eee;
+}
+.banner .bimg{
+	width: 7.6rem;
+	height: 2.4rem;
+}
+.bimg img{
+	width: 100%;
+	height: 100%;
+}
+.rlist{
+	width: 8rem;
+	height: 100%;
+}
+.item .title{
+	width: 7.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-left: .2rem;
+    color: #999;
+    font-size: .5rem;
+}
+.item li{
+	background-color: #fff;
+	float: left;
+    margin-left: .2rem;
+    margin-bottom: .2rem;
+    width: 2.4rem;
+    overflow: hidden;
+}
+.item span{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.item span img{
+	width: 2.4rem;
+	height:2.4rem;
+}
+.bor{
+	width: 8rem;
+	height: 1rem;
+}
+#a2{
+	position: relative;
+	height:100%;
+	width: 8rem;
+}

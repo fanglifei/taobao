@@ -1,0 +1,537 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html {
+    background: #fff;
+    font-family: Helvetica,sans-serif;
+    -webkit-text-size-adjust: none;
+}
+body {
+    font-family: arial,Helvetica,sans-serif;
+}
+body {
+    color: #999;
+    font-size: .14rem;
+    font-family: arial;
+}
+li, ol, ul {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img, input {
+    vertical-align: middle;
+}
+em, i {
+    font-style: normal;
+}
+.content {
+    background: #EFEFEF;
+	background-image: url(//img.alicdn.com/tfs/TB1IB4OoNz1gK0jSZSgXXavwpXa-430-164.png_1152x1920Q50s50.jpg_.webp);
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+.act-module-header-m {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+	height: 3.75rem;
+}
+.act-module-header-m .guide-area img, .act-module-header-m .rule-area img, .act-module-header-m .header-banner {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.zebra-sjjsd {
+    font-size: .12rem;
+}
+.zebra-sjjsd .zebra-sjjsd-list {
+    display: flex;
+    margin: .03rem .12rem .06rem;
+	justify-content: center;
+}
+.zebra-sjjsd-item {
+    flex: 1;
+    width: 33.33%;
+    margin-right: .03rem;
+    display: block;
+    background: #fff;
+    border-radius: .03rem;
+}
+.zebra-sjjsd-item a {
+    position: relative;
+    padding-top: 100%;
+    display: block;
+}
+.zebra-sjjsd-item .item-image {
+    position: absolute;
+    overflow: hidden;
+    top: .05rem;
+    left: .05rem;
+    right: .05rem;
+    bottom: .05rem;
+    z-index: 1;
+}
+.zebra-sjjsd-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.zebra-sjjsd-item .item-desc {
+    z-index: 10;
+    float: none;
+    clear: right;
+    margin: 0;
+    height: .24rem;
+    line-height: .24rem;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    overflow: hidden;
+    border-bottom-right-radius: .03rem;
+    border-bottom-left-radius: .03rem;
+}
+.zebra-sjjsd-item .item-desc .mui-price {
+    display: inline-block;
+    height: .24rem;
+    line-height: .24rem;
+    position: relative;
+    overflow: hidden;
+    font-size: .12rem;
+    color: #FF0036;
+    text-align: center;
+}
+.zebra-sjjsd-item .item-desc .mui-price-text {
+    border-radius: .04rem;
+    padding: .01rem .02rem .01rem .03rem;
+    margin-right: .04rem;
+    color: #fff;
+    font-size: .1rem;
+}
+.zebra-sjjsd-item .item-desc .mui-price-rmb {
+    font-size: .12rem;
+    margin: 0 .02rem 0 .01rem;
+}
+.zebra-sjjsd-item .item-desc .mui-price-integer {
+    font-size: .12rem;
+}
+.zebra-sjjsd-item .item-desc, .zebra-sjjsd-item .mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+}
+.zebra-sjjsd-item .mask {
+    top: 0;
+    z-index: 5;
+    background: #000;
+    opacity: .04;
+    border-bottom-right-radius: .03rem;
+    border-bottom-left-radius: .03rem;
+}
+.pmod-zebra-rightnav {
+    margin-top: 9px;
+    height: 88px;
+}
+.mui-scrollspy {
+    position: relative;
+    z-index: 1000;
+    height: 88px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+    background: #FFF;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93.6%;
+}
+.pmod-zebra-rightnav {
+	background-color: #fafafa;
+	position: sticky;
+	top: calc(env(safe-area-inset-top) + 0px);
+	z-index: 1000;
+    border-radius: .06rem;
+}
+.mui-scrollspy-btn {
+    width: 80px;
+    height: 88px;
+    line-height: 88px;
+    background: #fafafa;
+    border-left: 1px solid #EEE;
+    position: absolute;
+    z-index: 1002;
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: #9E9E9E;
+}
+.mui-scrollspy .mui-scrollspy-btn, .mui-scrollspy .mui-scrollspy-text {
+    border-radius: 0 12px 12px 0;
+    height: 80px;
+    line-height: 80px;
+}
+.pmod-zebra-rightnav .mui-scrollspy-btn, .pmod-zebra-rightnav .mui-scrollspy-text {
+    border-radius: 0 .06rem .06rem 0;
+}
+.mui-scrollspy .mui-scrollspy-btn {
+    background-color: #fafafa;
+    border-left-color: #eee;
+}
+.mui-scrollspy-btn b, .mui-scrollspy-btn svg {
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -16px;
+	display: block;
+}
+.mui-scrollspy-btn b img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+.mui-scrollspy-iscroll {
+    position: absolute;
+    height: 88px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.mui-scrollspy ul {
+    float: left;
+    font-size: 0;
+    letter-spacing: -4px;
+    padding-left: 0;
+    padding-right: 80px;
+}
+.mui-scrollspy li {
+    display: inline-block;
+    letter-spacing: 0;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    font-size: .16rem;
+    padding: 0 4px;
+    background: 0 0;
+	color: #353535;
+}
+.mui-scrollspy li.active span {
+    color: #cc0000;
+}
+.mui-scrollspy li span {
+    display: inline-block;
+    padding: 0 12px 0 40px;
+    line-height: 88px;
+    vertical-align: top;
+    margin: 0 auto;
+    position: relative;
+    max-width: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mui-scrollspy li span b {
+	display: block;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -20px;
+    visibility: hidden;
+	background-image: url(../img/jiankang/jk6.jpg);
+	background-position: center center;
+	 background-repeat: no-repeat;
+}
+.p-floor-title {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: .16rem;
+    height: 4.5em;
+}
+.p-floor-title .title-img {
+    height: 3em;
+    width: 7.5em;
+}
+.p-floor-title .title-text-ctn {
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.p-floor-title .title-text {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.p-floor-title .img-right {
+    transform: scaleX(-1);
+}
+.pmod-zebra-act-item-pc6-m3 {
+    margin: 0 .12rem;
+}
+.pmod-zebra-act-item-pc6-m3 .list-row {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: .03rem;
+}
+.pmod-zebra-act-item-pc6-m3 .list-row.first-row {
+    margin-top: .03rem;
+}
+.pmod-zebra-act-item-pc6-m3 .list-item{
+    display: block;
+    background-color: #FFF;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 1.85rem;
+    width: 1.15rem;
+    margin-right: .03rem;
+    border-radius: .03rem;
+}
+.pmod-zebra-act-item-pc6-m3 .item-img-wrapper {
+    position: relative;
+}
+.pmod-zebra-act-item-pc6-m3 .item-img {
+    display: block;
+    margin: 0 auto;
+    width: 1.15rem;
+    height: 1.15rem;
+}
+.pmod-zebra-act-item-pc6-m3 .item-title-wrapper {
+    display: flex;
+    margin-top: .05rem;
+    padding-left: .08rem;
+}
+.pmod-zebra-act-item-pc6-m3 .item-title {
+    color: #333;
+    flex: 1;
+    font-size: .12rem;
+    padding-right: .08rem;
+}
+.pmod-zebra-act-item-pc6-m3 .line-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pmod-zebra-act-item-pc6-m3 .item-desc {
+    border-color: #FF0036!important;
+    color: #FF0036!important;
+}
+.pmod-zebra-act-item-pc6-m3 .item-desc {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #FF0036;
+    background-color: #FFFAFB;
+    padding-left: .08rem;
+    padding-right: .08rem;
+    border: .02rem solid #FE283A;
+    height: .36rem;
+    font-size: .22rem;
+    margin-top: .02rem;
+    margin-left: .08rem;
+    margin-right: .08rem;
+    border-radius: .06rem;
+    max-width: 1.98rem;
+    transform: scale(.5);
+    transform-origin: top left;
+}
+.pmod-zebra-act-item-pc6-m3 .line-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pmod-zebra-act-item-pc6-m3 .price-con {
+    display: flex;
+    padding-left: .08rem;
+    position: absolute;
+    bottom: .06rem;
+}
+.pmod-zebra-act-item-pc6-m3 .price-con .item-act-price-con {
+    display: flex;
+    align-items: center;
+    color: #FF0036;
+}
+.pmod-zebra-act-item-pc6-m3 .price-con .yen {
+    font-family: Arial;
+    font-size: .1rem;
+    position: relative;
+    top: .02rem;
+}
+.pmod-zebra-act-item-pc6-m3 .item-act-price, .pmod-zebra-act-item-pc6-m3 .item-desc, .pmod-zebra-act-item-pc6-m3 .title, .pmod-zebra-act-item-pc6-m3 .yen {
+    color: #FF0036!important;
+}
+.pmod-zebra-act-item-pc6-m3 .price-con .item-act-price-con .item-act-price {
+    margin-left: .02rem;
+    margin-right: .05rem;
+    font-size: .13rem;
+}
+.pmod-zebra-act-item-pc6-m3 .item-tag-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: .1rem;
+    position: relative;
+    top: .02rem;
+}
+.pmod-zebra-act-item-pc6-m3 .list-row.last-row {
+    margin-bottom: .06rem;
+}
+.zebra-shop-coupon {
+    padding: .03rem .09rem .03rem .12rem;
+    background-color: transparent;
+}
+.zebra-shop-coupon .coupon-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.zebra-shop-coupon .coupon-item {
+    width: 33.33%;
+}
+.zebra-shop-coupon .coupon-item .item-inner {
+    display: block;
+    margin-right: .03rem;
+    margin-bottom: .03rem;
+    border-radius: .03rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+.zebra-shop-coupon .shop-area {
+    height: .59rem;
+    display: block;
+    position: relative;
+}
+.zebra-shop-coupon .shop-area .bg-texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.zebra-shop-coupon .shop-area .logo-container {
+    width: .48rem;
+    height: .24rem;
+    padding: .04rem;
+    position: absolute;
+    top: .1rem;
+    left: .34rem;
+    box-sizing: border-box;
+    border-radius: .12rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.zebra-shop-coupon .shop-area .logo-container .shop-logo {
+    width: 100%;
+    height: 100%;
+}
+.zebra-shop-coupon .shop-area .name-container {
+    width: 100%;
+    padding: 0 .05rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: .38rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.zebra-shop-coupon .shop-area .shop-name {
+    color: #fff;
+    font-size: .12rem;
+    line-height: 1.2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.zebra-shop-coupon .shop-area .arrow-circle-icon {
+    width: .12rem;
+    height: .12rem;
+    min-width: .12rem;
+    min-height: .12rem;
+    margin-left: .02rem;
+    flex-shrink: 0;
+}
+.zebra-shop-coupon .coupon-area {
+    height: .605rem;
+    position: relative;
+}
+.zebra-shop-coupon .coupon-meta {
+    top: .08rem;
+    left: .02rem;
+    right: .02rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    overflow: hidden;
+}
+.zebra-shop-coupon .coupon-meta, .zebra-shop-coupon .take-btn {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+}
+.zebra-shop-coupon .coupon-meta .value-unit {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: .12rem;
+    line-height: 1;
+}
+.zebra-shop-coupon .coupon-meta .value-num {
+    margin-right: .04rem;
+    font-size: .2rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: HelveticaNeue-CondensedBold;
+}
+.zebra-shop-coupon .coupon-meta .value-num, .zebra-shop-coupon .coupon-meta .value-unit {
+    color: #FF0036;
+}
+.zebra-shop-coupon .coupon-meta .coupon-thres {
+    font-size: .09rem;
+    line-height: 1;
+    color: #666;
+    white-space: nowrap;
+}
+.zebra-shop-coupon .take-btn {
+    height: .23rem;
+    left: .05rem;
+    right: .05rem;
+    bottom: .05rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF0036;
+    border-radius: .04rem;
+}
+.zebra-shop-coupon .take-btn .take-txt {
+    color: #fff;
+    font-size: .12rem;
+    line-height: 1;
+    margin-right: .04rem;
+}
+.zebra-shop-coupon .take-btn .arrow-icon {
+    width: .12rem;
+}

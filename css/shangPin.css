@@ -1,0 +1,1122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    top: 0;
+}
+
+button {
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+.app {
+    width: 100%;
+    position: relative;
+    max-width: 768px;
+    padding-bottom: 0.5rem;
+    margin-bottom: env(safe-area-inset-bottom);
+    margin-bottom: constant(safe-area-inset-bottom);
+}
+
+.app .dinamic-layout-one-column {
+    background: #fff;
+}
+
+.navi-bar {
+    width: 100%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    display: flex;
+    z-index: 101;
+    justify-content: space-between;
+    padding: 0 0.1rem;
+}
+
+.navi-bar button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.34rem;
+    height: 0.34rem;
+    border: 0;
+    border-radius: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.navi-bar button .taobao-iconfont {
+    display: inline-block;
+    width: .22rem;
+    height: .22rem;
+    font-size: .22rem;
+}
+
+.pic-gallery-wrapper {
+    position: relative;
+    width: 100%;
+    transition: height 0.2s;
+    height: 100vw;
+}
+
+.siema-wrapper {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height 0.2s;
+    z-index: 100;
+}
+
+.siema-wrapper .siema {
+    width: 100%;
+    height: 100%;
+    min-height: 3.75rem;
+    overflow: hidden;
+    direction: ltr;
+    cursor: -webkit-grab;
+}
+
+.siema-wrapper .siema>div {
+    width: 11.25rem;
+    transition: all 200ms ease-out 0s;
+    ransform: translate3d(0px, 0px, 0px);
+}
+
+.siema-wrapper .siema>div:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.siema-wrapper .siema>div>div {
+    float: left;
+    width: 3.75rem;
+}
+
+.siema-wrapper .siema .img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper a {
+    position: relative;
+}
+
+.img-wrapper .app-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper .app-video::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.64rem;
+    height: 0.64rem;
+    margin-left: -0.32rem;
+    margin-top: -0.32rem;
+    background: url(../img/shangPin/paly.png) center center no-repeat;
+    background-size: cover;
+}
+
+.siema-wrapper .siema .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.current-slide {
+    position: absolute;
+    display: inline-block;
+    right: 0.1rem;
+    bottom: 0.16rem;
+    font-size: 0.1rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 0.1rem;
+    border-radius: 0.2rem;
+    z-index: 10;
+}
+
+.d-price {
+    line-height: 1;
+    padding: 0 0.12rem;
+}
+
+.d-price .present-price {
+    padding-top: 0.18rem;
+}
+
+.d-price .present-price .main-price-wrapper,
+.d-price .present-price .sub-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.o-t-price {
+    color: #ff5000;
+    font-size: 0.24rem;
+}
+
+.d-price .present-price .o-t-price {
+    margin-right: 0.05rem;
+}
+
+.o-t-price i {
+    display: inline-block;
+    font-size: 0.15rem;
+    margin-left: -0.035rem;
+}
+
+.d-price .present-price .txt {
+    display: flex;
+    align-items: center;
+    height: 0.14rem;
+    background-color: #FFF1EB;
+    border-radius: 0.2rem;
+    padding: 0.04rem;
+    margin-right: 0.04rem;
+}
+
+.hairlines .d-price .present-price .icon,
+.hairlines .d-price .present-price .txt {
+    margin-bottom: 0.02rem;
+}
+
+.d-price .present-price .txt span {
+    font-size: 0.09rem;
+    line-height: 1;
+    color: #ff5000;
+}
+
+.d-price .original-price {
+    padding-top: 0.02rem;
+    font-size: 0.1rem;
+    color: #999;
+}
+
+.d-price .original-price>div {
+    display: inline-block;
+    margin-right: 0.24rem;
+}
+
+.tpl-wrapper .FrameLayout {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 3.75rem;
+    height: .44rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.tpl-wrapper .FrameLayout .FrameLayout-d {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    height: .44rem;
+    width: 3.12rem;
+    visibility: visible;
+    left: 0px;
+    top: 0px;
+}
+
+.FrameLayout .FrameLayout-d .RichText {
+    position: absolute;
+    display: flex;
+    margin-top: .04rem;
+    height: auto;
+    margin-left: .12rem;
+    width: 3rem;
+    font-size: .15rem;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    visibility: visible;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: none;
+}
+
+.FrameLayout .FrameLayout-d .RichText>span {
+    display: -webkit-box;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.FrameLayout .FrameLayout-f {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-right: 0px;
+    width: fit-content;
+    margin-top: 0px;
+    height: .24rem;
+    right: 0px;
+    top: .1rem;
+    background-color: rgb(244, 244, 244);
+    flex-direction: row;
+    border-top-left-radius: .12rem;
+    border-bottom-left-radius: .12rem;
+}
+
+.FrameLayout .FrameLayout-f .TextView {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-left: 0px;
+    margin-right: .06rem;
+    width: fit-content;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    place-self: center flex-start;
+    color: rgb(153, 153, 153);
+    justify-content: flex-start;
+    align-items: center;
+    max-width: none;
+}
+
+.FrameLayout .FrameLayout-f .TextView>span {
+    white-space: nowrap;
+    line-height: .14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.FrameLayout .TextView1 {
+    position: absolute;
+    display: flex;
+    margin-left: .12rem;
+    width: fit-content;
+    height: auto;
+    max-width: 1.2rem;
+    font-size: .13rem;
+    overflow: hidden;
+    left: 0px;
+    top: .12rem;
+    color: rgb(153, 153, 153);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrameLayout .TextView2 {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: auto;
+    max-width: 1.2rem;
+    font-size: .13rem;
+    overflow: hidden;
+    left: 1.6722rem;
+    top: .12rem;
+    color: rgb(153, 153, 153);
+    visibility: visible;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrameLayout .TextView3 {
+    position: absolute;
+    display: flex;
+    margin-right: .12rem;
+    width: fit-content;
+    height: auto;
+    max-width: 1.2rem;
+    font-size: .13rem;
+    overflow: hidden;
+    right: 0px;
+    top: .12rem;
+    color: rgb(153, 153, 153);
+    visibility: visible;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tpl-wrapper .LinearLayout {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 3.75rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+}
+
+.tpl-wrapper .FL1 {
+    height: .81rem;
+    margin-top: .13rem;
+}
+
+.tpl-wrapper .TextView {
+    position: absolute;
+    display: flex;
+    margin-left: .12rem;
+    width: .42rem;
+    height: .15rem;
+    font-size: .13rem;
+    left: 0px;
+    top: 0px;
+    color: rgb(153, 153, 153);
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: none;
+}
+
+.tpl-wrapper .FL2 {
+    margin-left: .54rem;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+}
+
+.tpl-wrapper .TV2 {
+    margin-right: .5rem;
+    left: auto;
+    right: 0;
+}
+
+.tpl-wrapper .RichText {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-bottom: .1rem;
+    height: .15rem;
+    width: 2.66rem;
+    place-self: flex-start center;
+    font-size: .13rem;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+    justify-content: flex-start;
+    align-items: center;
+    max-width: none;
+}
+
+.tpl-wrapper .RT2 {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+.tpl-wrapper .RT3 {
+    position: absolute;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    width: .69rem;
+    height: .13rem;
+    border-radius: .08rem;
+    place-self: center flex-start;
+    border: 0.5px solid rgba(0, 0, 0, 0);
+    background-color: rgb(253, 237, 231);
+}
+
+.tpl-wrapper .TV3 {
+    margin-left: .04rem;
+    margin-right: .04rem;
+    width: fit-content;
+    height: .13rem;
+    font-size: .09rem;
+    color: rgb(255, 80, 0);
+    border-radius: 0.5rem;
+    border: 0.5px solid rgba(0, 0, 0, 0);
+    background-color: rgb(253, 237, 231);
+}
+
+.tpl-wrapper .RichTextByCoupon {
+    position: absolute;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: .15rem;
+    margin-left: 2px;
+    width: 1.95rem;
+    font-size: .11rem;
+    overflow: hidden;
+    color: rgb(255, 80, 0);
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    align-items: center;
+    -webkit-box-align: center;
+    max-width: none;
+    right: 0;
+}
+
+.tpl-wrapper .FL3 {
+    height: .42rem;
+}
+
+.tpl-wrapper .TV4 {
+    margin-left: .12rem;
+    width: fit-content;
+    margin-top: .13rem;
+    height: .15rem;
+    font-size: .13rem;
+    color: rgb(153, 153, 153);
+}
+
+.tpl-wrapper .FL4 {
+    flex-direction: column;
+    margin-left: .54rem;
+    margin-top: .13rem;
+    height: auto;
+    width: 2.05rem;
+}
+
+.AdaptiveTextView {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 2.05rem;
+    margin-left: 0px;
+    width: fit-content;
+    margin-top: 0px;
+    height: .15rem;
+    font-size: .13rem;
+    color: rgb(51, 51, 51);
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    align-items: center;
+    -webkit-box-align: center;
+    overflow: hidden;
+}
+
+.View {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 1px;
+    height: .14rem;
+    place-self: flex-start;
+}
+
+.tpl-wrapper .TV5 {
+    margin-left: .12rem;
+    width: fit-content;
+    height: 100%;
+    font-size: .14rem;
+    left: 0px;
+    top: 0px;
+    color: rgb(51, 51, 51);
+}
+
+.tpl-wrapper .TV6 {
+    margin-right: .28rem;
+    width: fit-content;
+    height: .24rem;
+    font-size: .13rem;
+    right: 0px;
+    top: .1rem;
+    left: auto;
+    color: rgb(255, 80, 0);
+}
+
+.tpl-wrapper .FL6 {
+    height: .91rem;
+}
+
+.tpl-wrapper .FL7 {
+    margin-left: .12rem;
+    width: .4rem;
+    margin-top: 0px;
+    height: .4rem;
+}
+
+.tpl-wrapper .ImageView {
+    position: absolute;
+    left: 0;
+    top: .1rem;
+    display: flex;
+    overflow: hidden;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+}
+
+.tpl-wrapper .ImageView img {
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-wrapper .TV7 {
+    margin-left: .4rem;
+    width: fit-content;
+    margin-top: .11rem;
+    height: auto;
+    font-size: .13rem;
+    overflow: hidden;
+    color: rgb(153, 153, 153);
+}
+
+.tpl-wrapper .TV8 {
+    margin-left: .12rem;
+    width: 3.55rem;
+    margin-top: .35rem;
+    margin-bottom: .2rem;
+    height: auto;
+    font-size: .13rem;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+}
+
+.tpl-wrapper .FL8 {
+    width: 3.75rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+.tpl-wrapper .View1 {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-left: .12rem;
+    width: 3.51rem;
+    height: 0.5px;
+    background-color: rgb(244, 244, 244);
+    place-self: flex-start;
+}
+
+.tpl-wrapper .FL9 {
+    width: 3.75rem;
+    margin-top: 5px;
+    height: .4rem;
+}
+
+.tpl-wrapper .TV9 {
+    width: fit-content;
+    height: .18rem;
+    font-size: .14rem;
+    left: 0px;
+    top: .11rem;
+    color: rgb(51, 51, 51);
+}
+
+.tpl-wrapper .TV10 {
+    margin-right: .28rem;
+    width: fit-content;
+    height: .24rem;
+    font-size: .13rem;
+    left: auto;
+    right: 0px;
+    top: .08rem;
+    color: rgb(255, 80, 0);
+}
+
+.tpl-wrapper .FL10 {
+    width: fit-content;
+    margin-top: 0px;
+    height: auto;
+    border-radius: .06rem;
+    flex-direction: row;
+    place-self: center;
+}
+
+.tpl-wrapper .FL11 {
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    width: .87rem;
+    height: .87rem;
+}
+
+.tpl-wrapper .FL11 .ImageView {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: .87rem;
+    height: .87rem;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+}
+
+.tpl-wrapper .FL12 {
+    height: .9rem;
+}
+
+.tpl-wrapper .TV11 {
+    margin-left: .12rem;
+    width: 3.75rem;
+    margin-top: .2rem;
+    height: .2rem;
+    font-size: .14rem;
+    color: rgb(0, 0, 0);
+}
+
+.tpl-wrapper .FL13 {
+    margin-top: .46rem;
+    height: .25rem;
+}
+
+.tpl-wrapper .FL13 .ImageView1 {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-left: .12rem;
+    width: .36rem;
+    height: .15rem;
+    left: 0px;
+    top: .05rem;
+}
+
+.tpl-wrapper .FL13 .ImageView1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-wrapper .TV12 {
+    margin-left: .52rem;
+    width: fit-content;
+    height: .24rem;
+    font-size: .13rem;
+    left: 0px;
+    top: .01rem;
+}
+
+.tpl-wrapper .TV13 {
+    margin-right: .12rem;
+    width: .65rem;
+    height: .24rem;
+    font-size: .12rem;
+    overflow: hidden;
+    right: 0px;
+    top: 0.5px;
+    color: rgb(255, 80, 0);
+    border: 0.5px solid rgb(255, 80, 0);
+    border-radius: .12rem;
+    left: auto;
+    justify-content: center;
+}
+
+.tpl-wrapper .FL14 {
+    height: 1.1rem;
+}
+
+.tpl-wrapper .ImageView2 {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-top: .12rem;
+    height: .49rem;
+    margin-left: .12rem;
+    width: .49rem;
+    border-radius: .03rem;
+}
+
+.tpl-wrapper .ImageView2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-wrapper .FL15 {
+    margin-top: .12rem;
+    height: .49rem;
+    margin-left: .69rem;
+    width: 1.45rem;
+}
+
+.tpl-wrapper .TV14 {
+    margin-left: 0px;
+    width: 1.44rem;
+    margin-top: .09rem;
+    height: auto;
+    font-size: .14rem;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+    visibility: visible;
+}
+
+.tpl-wrapper .LinearLayout1 {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-top: .27rem;
+    height: .14rem;
+    margin-left: 0px;
+    width: fit-content;
+    flex-direction: row;
+}
+
+.tpl-wrapper .ImageView3 {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    margin-top: 0px;
+    height: .12rem;
+    margin-left: 0px;
+    width: .14rem;
+    place-self: flex-start;
+}
+
+.tpl-wrapper .ImageView4 {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    margin-top: 0px;
+    height: .12rem;
+    margin-left: .01rem;
+    width: .66rem;
+    place-self: flex-start;
+}
+
+.tpl-wrapper .ImageView3 img,
+.tpl-wrapper .ImageView4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-wrapper .TV15 {
+    margin-right: .89rem;
+    width: .65rem;
+    margin-top: .24rem;
+    height: .24rem;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(255, 80, 0);
+    border-radius: .12rem;
+    border: 0.5px solid rgb(255, 80, 0);
+    justify-content: center;
+    right: 0;
+    left: auto;
+}
+
+.tpl-wrapper .ImageView5 {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-top: .24rem;
+    height: .24rem;
+    margin-right: .12rem;
+    width: .65rem;
+    right: 0px;
+    top: 0px;
+}
+
+.tpl-wrapper .ImageView5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-wrapper .FL16 {
+    position: absolute;
+    margin-top: .61rem;
+    height: .49rem;
+    margin-left: .12rem;
+    width: 3.51rem;
+}
+
+.tpl-wrapper .TV16 {
+    margin-left: 0px;
+    width: .54rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(153, 153, 153);
+    left: 0px;
+    top: .175rem;
+    justify-content: flex-start;
+}
+
+.tpl-wrapper .TV17 {
+    margin-left: .49rem;
+    width: .33rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(255, 80, 0);
+    justify-content: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    left: 0px;
+    top: .175rem;
+}
+
+.tpl-wrapper .TV18 {
+    margin-left: .81rem;
+    width: .11rem;
+    height: .14rem;
+    border-radius: .07rem;
+    font-size: .1rem;
+    overflow: hidden;
+    justify-content: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    color: rgb(255, 80, 0);
+    background-color: rgb(255, 241, 235);
+    left: 0px;
+    top: .175rem;
+}
+
+.tpl-wrapper .TV19 {
+    margin-left: 1.28rem;
+    width: .54rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(153, 153, 153);
+    left: 0px;
+    top: .175rem;
+}
+
+.tpl-wrapper .TV20 {
+    margin-left: 1.77rem;
+    width: .33rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(255, 80, 0);
+    top: .175rem;
+}
+
+.tpl-wrapper .TV21 {
+    margin-left: 2.1rem;
+    width: .14rem;
+    height: .14rem;
+    border-radius: .07rem;
+    font-size: .1rem;
+    overflow: hidden;
+    justify-content: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    color: rgb(255, 80, 0);
+    background-color: rgb(255, 241, 235);
+    left: 0px;
+    top: .175rem;
+}
+
+.tpl-wrapper .TV22 {
+    margin-left: 2.54rem;
+    width: .54rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(153, 153, 153);
+    left: 0px;
+    top: .175rem;
+}
+
+.tpl-wrapper .TV23 {
+    margin-left: 3.03rem;
+    width: .33rem;
+    height: auto;
+    font-size: .12rem;
+    overflow: hidden;
+    color: rgb(255, 80, 0);
+    top: .175rem;
+}
+
+.tpl-wrapper .TV24 {
+    margin-left: 3.36rem;
+    width: .14rem;
+    height: .14rem;
+    border-radius: .07rem;
+    font-size: .1rem;
+    overflow: hidden;
+    justify-content: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    color: rgb(255, 80, 0);
+    background-color: rgb(255, 241, 235);
+    left: 0px;
+    top: .175rem;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 0.55rem;
+    max-width: 768px;
+    display: flex;
+    z-index: 110;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 -0.01rem 0.06rem 0;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: constant(safe-area-inset-bottom);
+}
+
+.bottom-bar>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 0.5rem;
+    height: 0.5rem;
+    white-space: nowrap;
+    align-items: center;
+    color: #999;
+    padding: 0 0.1rem;
+}
+
+.bottom-bar>div:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.bottom-bar>div .taobao-iconfont {
+    width: .18rem;
+    height: .2rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.bottom-bar>div .btn-text {
+    font-size: 0.1rem;
+    line-height: 0.2rem;
+}
+
+.bottom-bar>.btn-shop .taobao-iconfont {
+    background-image: url(../img/shangPin/dianpu.png);
+}
+
+.bottom-bar>.btn-wangwang .taobao-iconfont {
+    background-image: url(../img/shangPin/kefu.png);
+}
+
+.bottom-bar>.btn-fav .taobao-iconfont {
+    background-image: url(../img/shangPin/shoucang.png);
+}
+
+.bottom-bar .bottom-bar-btn {
+    width: 50% !important;
+    height: 0.4rem;
+    bottom: 0.12rem;
+    line-height: 0.4rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.14rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.bottom-bar .bottom-bar-btn.btn-pos-left {
+    border-radius: 0.2rem 0 0 0.2rem;
+    background-image: linear-gradient(to right, #FFC500, #FF9402);
+}
+
+.bottom-bar .bottom-bar-btn.btn-pos-right {
+    border-radius: 0 0.2rem 0.2rem 0;
+    background-image: linear-gradient(to right, #FF7A00, #FE560A);
+}
+
+.bottom-bar .bottom-bar-btn .btn-title {
+    font-size: 0.14rem;
+    font-weight: bold;
+}
+
+.detail-desc {
+    width: 100%;
+    background-color: #fff;
+    min-height: 5rem;
+    padding-top: 0.12rem;
+}
+
+.divide-bar {
+    background-color: #f2f2f2;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.08rem 0;
+    font-size: 0;
+}
+
+.divide-bar .line {
+    display: inline-block;
+    width: 0.4rem;
+    border-top: 0.01rem solid #999;
+}
+
+.divide-bar .icon-text {
+    font-size: 0.12rem;
+    margin-left: 0.01rem;
+    margin: 0 0.08rem;
+}
+
+.detail-desc img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 0.5rem;
+}
+
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}

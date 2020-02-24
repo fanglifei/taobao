@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+input{
+	border: none;
+	outline: none;
+}
+a{
+	text-decoration: none;
+	
+}
+.logo {
+    width: 2.13333333rem;
+    height: 2.13333333rem;
+    background: url(../img/hh/logo.png) no-repeat;
+    background-size: contain;
+    margin: 1.25333333rem auto 0;
+}
+.am-list {
+    width: 8.77333333rem;
+    position: relative;
+    margin: 0 auto;
+    font-size: .42666667rem;
+    color: #333;
+}
+.am-list-item {
+    position: relative;
+    width: 100%;
+    margin: 1.2rem 0 0;
+    border-bottom: 1px solid #ff5000;
+}
+.am-input-required {
+    font-size: inherit;
+    width: 7.73333333rem;
+    height: .48rem;
+    margin: 0 0 .17333333rem .12rem;
+    outline: none;
+    border: 0;
+    color: #333;
+}
+.am-list-action {
+    position: absolute;
+    width: .53333333rem;
+    height: .26666667rem;
+    right: .18666667rem;
+    bottom: .4rem;
+}
+.am-icon-clear {
+    position: absolute;
+    top: .04rem;
+    right: 0;
+	width: 0.42666666rem;
+	height: .43rem;
+}
+.am-icon-clear img{
+	width: 100%;
+	height: 100%;
+}
+.checkcode {
+    margin-top: .26666667rem;
+    width: 8.77333333rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.am-field {
+    font-size: .37333333rem;
+    width: 8.77333333rem;
+    margin: .69333333rem auto 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.am-footer {
+    margin-top: .58666667rem;
+}
+.f-left, .f-right {
+    color: #555;
+    text-decoration: none;
+}
+.f-right {
+    margin-right: .10666667rem;
+}
+.am-field {
+    font-size: .37333333rem;
+    width: 8.77333333rem;
+    margin: .69333333rem auto 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.am-fieldBottom {
+    margin-top: .94666667rem;
+}
+.am-button {
+    font-size: .42666667rem;
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: .6rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+.am-button-submit {
+    background: -webkit-linear-gradient(left,#ff9000,#ff5000) no-repeat;
+    color: #fff;
+    box-shadow: 0 0.08rem 0.16rem #f7c7b1;
+}
